@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-gray-200">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>User Q&A section</title>
+    <link rel="shortcut icon" href="./assets/faq.png" type="image/x-icon">
+    <!-- daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+  .poppins {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+    </style>
+
 </head>
-<body>
-    hey who are you .go to hell have a nice try i am aking
+<body class="poppins  text-[rgb(0,48,60)]">
+    <!-- header -->
+     
+    <header class="w-10/12 mx-auto my-10">
+        <nav class="bg-white p-3 rounded-xl">
+
+                <!-- div1 -->  
+
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <img class="w-12" src="./assets/logo.png" alt="">
+                    <div class="text-2xl">
+                        Dev<span class="font-bold">Board</span>
+                    </div>
+                </div>
+
+                 <!-- div2 -->
+                <div>
+                    <button id="return-btn" class="btn btn-primary @apply shadow-none">Back to Desk</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main -->
+     <main class="w-10/12 mx-auto h-screen overflow-hidden">
+        <h2 class="text-center text-2xl font-semibold mb-10">Blogs</h2>
+        <!-- q&a corner -->
+        <section class="space-y-10">
+            <!-- div1 -->
+            <div class="p-3 bg-white rounded-xl">
+                <h3 class="text-xl font-semibold">Question-1: What are the different ways to select an element in the DOM?</h3>
+                <hr class="border-dashed border-[1px] border-gray-100 my-5">
+                <p class="text-[rgba(0,0,0,.6)] w-11/12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, similique.</p>
+            </div>
+            <!-- div2 -->
+            <div class="p-5 bg-white rounded-xl">
+                <h3 class="text-xl font-semibold">Question-1: What are the different ways to select an element in the DOM?</h3>
+                <hr class="border-dashed border-[1px] border-gray-100 my-5">
+                <p class="text-[rgba(0,0,0,.6)] w-11/12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, similique.</p>
+            </div>
+            <!-- div3 -->
+            <div class="p-5 bg-white rounded-xl">
+                <h3 class="text-xl font-semibold">Question-1: What are the different ways to select an element in the DOM?</h3>
+                <hr class="border-dashed border-[1px] border-gray-100 my-5">
+                <p class="text-[rgba(0,0,0,.6)] w-11/12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, similique.</p>
+            </div>
+            <!-- div4 -->
+            <div class="p-5 bg-white rounded-xl">
+                <h3 class="text-xl font-semibold">Question-1: What are the different ways to select an element in the DOM?</h3>
+                <hr class="border-dashed border-[1px] border-gray-100 my-5">
+                <p class="text-[rgba(0,0,0,.6)] w-11/12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, similique.</p>
+            </div>
+            <!-- div5 -->
+            <div class="p-5 bg-white rounded-xl">
+                <h3 class="text-xl font-semibold">Question-1: What are the different ways to select an element in the DOM?</h3>
+                <hr class="border-dashed border-[1px] border-gray-100 my-5">
+                <p class="text-[rgba(0,0,0,.6)] w-11/12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, similique.</p>
+            </div>
+        </section>
+     </main>
+
+
+    <script src="./utility/q&a.js"></script>
 </body>
 </html>

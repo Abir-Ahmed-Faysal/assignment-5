@@ -16,7 +16,7 @@ document.getElementById('theme-btn').addEventListener('click',function(event){
 
 
 
+// link discover page
 a=document.getElementById('discover-Btn').addEventListener('click',function(){
 window.location.href='./q&a.html';
-
 })
