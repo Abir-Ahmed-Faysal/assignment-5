@@ -46,11 +46,75 @@ const featureList=document.querySelectorAll('.feature');
 
 for(core of featureList){
     core.addEventListener('click',function(event){
-        event.target.setAttribute("disabled", "true");
+
+            //include disabled attribute& alert
+            event.target.setAttribute("disabled", "true");
+         alert('Board Updated Successfully');
+         
+
+
+
+
+
+
+
+
+
+
+         
+            //total process increase
+        const totalProcess=parseInt(document.getElementById('total-process').innerText);
+        if(event.target.classList.contains("feature")){
+            const sum=totalProcess+1;
+            document.getElementById('total-process').innerText=sum;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // limit of Six task
+        const taskLimit=parseInt(document.getElementById('task-limit').innerText);
         
-        alert('Board Updated Successfully')
-    
+        if(event.target.classList.contains("feature")){
+            const sum=taskLimit-1;
+            document.getElementById('task-limit').innerText=sum;
+             if(sum===0){
+                alert('complete all')
+                return;
+             }
+         }
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
     })
-    
 }
 
