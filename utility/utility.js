@@ -40,3 +40,17 @@ window.location.href='./q&a.html';
                                 //  get year
             const currentYear=new Date().getFullYear();
             document.getElementById('year').innerText=currentYear;
+
+
+const featureList=document.querySelectorAll('.feature');
+
+for(core of featureList){
+    core.addEventListener('click',function(event){
+        event.target.setAttribute("disabled", "true");
+        
+        alert('Board Updated Successfully')
+    
+    })
+    
+}
+
