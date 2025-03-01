@@ -14,9 +14,29 @@ document.getElementById('theme-btn').addEventListener('click',function(event){
     }
 })
 
+            // link discover btn
 
-
-// link discover page
 a=document.getElementById('discover-Btn').addEventListener('click',function(){
 window.location.href='./q&a.html';
 })
+
+
+                                // get day
+            const dayList=["Sun",'Mon','Tue','Wed','Thu','Fri',"Sat"];
+            const currentDay=new Date().getDay();
+             const day=dayList[currentDay];
+             document.getElementById('day').innerText=day;
+
+                                //  get Day
+            const currentDate=new Date().getDate();
+            document.getElementById('date').innerText=currentDate
+
+                                // get month
+             const monthList=["Jan",'Feb','Mar','Apr','May','Jun','Jul','Aug',"Sep",'Oct','Nov',"Dec"];
+            const currentMonth=new Date().getMonth();
+            const month=monthList[currentMonth];
+             document.getElementById('Month').innerText=month;
+
+                                //  get year
+            const currentYear=new Date().getFullYear();
+            document.getElementById('year').innerText=currentYear;
