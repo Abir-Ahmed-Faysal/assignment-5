@@ -26,7 +26,7 @@ document.getElementById('theme-btn').addEventListener
 
 
             // link discover btn
-a=document.getElementById('discover-Btn').addEventListener('click',function(){
+document.getElementById('discover-Btn').addEventListener('click',function(){
 window.location.href='./q&a.html';
 })
 
